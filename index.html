@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Haath | Handmade in India</title>
+<meta name="description" content="Export-grade handicrafts, made by hand in India. Shop retail or send an export and bulk enquiry.">
+<meta name="theme-color" content="#F3E9DC">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%23B5562E'/%3E%3Cpath d='M12 7h8M13.2 7c0 2.4-3.6 4-3.6 8.8 0 4.8 2.8 8.2 6.4 8.2s6.4-3.4 6.4-8.2c0-4.8-3.6-6.4-3.6-8.8' fill='none' stroke='%23F3E9DC' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,0..100;1,9..144,300..700,0..100&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="preload" as="image" href="assets/img/wheel-poster.jpg">
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"}}</script>
+</head>
+<body>
+
+<!-- Loader: the clay is centred before anything begins -->
+<div class="loader" aria-hidden="true">
+  <div class="loader__wheel"><span></span></div>
+  <p class="loader__text">Centring the clay</p>
+</div>
+
+<header class="nav">
+  <a href="#top" class="brand" aria-label="Haath home">
+    <svg viewBox="0 0 32 32" class="brand__mark" aria-hidden="true"><path d="M11 4h10M12.5 4c0 3-4.5 5-4.5 11 0 6 3.5 11 8 11s8-5 8-11c0-6-4.5-8-4.5-11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M6 28h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    <span>Haath</span>
+  </a>
+  <nav class="nav__links" aria-label="Main">
+    <a href="#making">The Making</a>
+    <a href="#hands">Artisans</a>
+    <a href="#shop">Shop</a>
+    <a href="#export">Export &amp; Bulk</a>
+  </nav>
+  <div class="nav__actions">
+    <button class="currency" type="button" aria-label="Switch currency"><span data-cur="INR" class="is-on">INR</span><span data-cur="USD">USD</span></button>
+    <button class="cart-btn" type="button" aria-label="Open cart">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8Z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M9 8V6a3 3 0 0 1 6 0v2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+      <span class="cart-count">0</span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- 1. HERO: a pot rising on the wheel -->
+  <section class="hero">
+    <video class="hero__video" src="assets/video/wheel.mp4" poster="assets/img/wheel-poster.jpg" autoplay muted loop playsinline preload="auto"></video>
+    <div class="hero__shade"></div>
+    <div class="hero__inner">
+      <p class="eyebrow hero__eyebrow">Export-grade handicrafts &middot; Made in India</p>
+      <h1 class="hero__title">
+        <span class="line"><span>Made by hand.</span></span>
+        <span class="line"><span><em>Made to travel.</em></span></span>
+      </h1>
+      <p class="hero__sub">Every piece begins as a lump of river clay, a block of wood or a length of cotton, and ends in a home somewhere in the world. Buy one, or bring a whole collection to your store.</p>
+      <div class="hero__cta">
+        <a href="#shop" class="btn btn--light">Shop the collection</a>
+        <a href="#export" class="btn btn--ghost">Export &amp; bulk enquiry</a>
+      </div>
+    </div>
+    <a href="#making" class="hero__scroll" aria-label="Scroll to the making">
+      <span class="hero__scroll-ring"></span>
+      <span>Scroll</span>
+    </a>
+  </section>
+
+  <!-- 2. THE MAKING: 3D pot formed by scroll -->
+  <section class="making" id="making">
+    <div class="making__sticky">
+      <canvas class="making__canvas" aria-label="A 3D clay pot that takes shape as you scroll"></canvas>
+      <div class="making__steps">
+        <p class="eyebrow">The life of one piece</p>
+        <ol>
+          <li class="step is-active" data-step="0">
+            <span class="step__num">01</span>
+            <h2>Mitti <small>the clay</small></h2>
+            <p>River clay, kneaded by foot and by hand until it feels alive. Nothing is poured into a mould.</p>
+          </li>
+          <li class="step" data-step="1">
+            <span class="step__num">02</span>
+            <h2>Chaak <small>the wheel</small></h2>
+            <p>Centred, opened, raised. Ten fingers and one spinning wheel decide the shape. No two come out the same.</p>
+          </li>
+          <li class="step" data-step="2">
+            <span class="step__num">03</span>
+            <h2>Bhatti <small>the fire</small></h2>
+            <p>A slow wood-fired kiln turns soft grey clay into strong terracotta red, ready for a long journey.</p>
+          </li>
+          <li class="step" data-step="3">
+            <span class="step__num">04</span>
+            <h2>Rang <small>the finish</small></h2>
+            <p>Painted by hand, sealed, and checked twice before it is packed in straw and sent to you.</p>
+          </li>
+        </ol>
+      </div>
+      <div class="making__meter" aria-hidden="true">
+        <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="44" class="meter__track"/><circle cx="50" cy="50" r="44" class="meter__fill"/></svg>
+        <span class="meter__label">01 / 04</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rim of the wheel: a ring of crafts that turns with your scroll -->
+  <div class="rim" aria-hidden="true">
+    <div class="rim__track">
+      <span>Terracotta</span><i></i><span>Blue Pottery</span><i></i><span>Channapatna Lacquerware</span><i></i><span>Bagru Block Print</span><i></i><span>Brass &amp; Dhokra</span><i></i>
+      <span>Terracotta</span><i></i><span>Blue Pottery</span><i></i><span>Channapatna Lacquerware</span><i></i><span>Bagru Block Print</span><i></i><span>Brass &amp; Dhokra</span><i></i>
+    </div>
+  </div>
+
+  <!-- 3. THE HANDS -->
+  <section class="hands" id="hands">
+    <div class="section-head">
+      <p class="eyebrow">The hands behind it</p>
+      <h2 class="display">Three regions. <em>One way of working:</em> slowly, and by hand.</h2>
+    </div>
+    <div class="hands__grid">
+      <figure class="hand hand--tall rise">
+        <video src="assets/video/artisan-vertical.mp4" muted loop playsinline preload="none" class="lazy-video"></video>
+        <figcaption><strong>Terracotta</strong><span>Dhubri, Assam</span></figcaption>
+      </figure>
+      <figure class="hand rise">
+        <img src="assets/img/block-print.webp" alt="Artisan pressing a carved wooden block onto cotton in Bagru" loading="lazy">
+        <figcaption><strong>Block print</strong><span>Bagru, Rajasthan</span></figcaption>
+      </figure>
+      <figure class="hand rise">
+        <img src="assets/img/toy-painter.webp" alt="Hands painting the face of a wooden Channapatna doll" loading="lazy">
+        <figcaption><strong>Lacquer toys</strong><span>Channapatna, Karnataka</span></figcaption>
+      </figure>
+      <blockquote class="hands__quote rise">
+        <p>&ldquo;The wheel teaches you patience. If you hurry the clay, it remembers.&rdquo;</p>
+        <cite>Potter, 3rd generation</cite>
+      </blockquote>
+      <figure class="hand hand--wide rise">
+        <img src="assets/img/toy-maker.webp" alt="Artisan turning wood on a lathe to make Channapatna toys" loading="lazy">
+        <figcaption><strong>Turned on the lathe</strong><span>Ivory-wood, natural lac colours</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 4. SHOP -->
+  <section class="shop" id="shop">
+    <div class="section-head section-head--row">
+      <div>
+        <p class="eyebrow">Out of the kiln</p>
+        <h2 class="display">The collection</h2>
+      </div>
+      <p class="shop__note">One piece, one price. No sizes to pick. Add it and it is yours.</p>
+    </div>
+    <div class="products" data-products></div>
+  </section>
+
+  <!-- 5. JOURNEY -->
+  <section class="journey">
+    <video class="journey__video lazy-video" src="assets/video/pots-rows.mp4" muted loop playsinline preload="none"></video>
+    <div class="journey__shade"></div>
+    <div class="journey__inner">
+      <p class="eyebrow eyebrow--light">The last step</p>
+      <h2 class="display display--light">From our courtyard <em>to your doorstep.</em></h2>
+      <div class="route">
+        <svg class="route__svg" viewBox="0 0 1000 120" preserveAspectRatio="none" aria-hidden="true">
+          <path class="route__base" d="M10 60 C 200 10, 300 110, 500 60 S 800 10, 990 60"/>
+          <path class="route__line" d="M10 60 C 200 10, 300 110, 500 60 S 800 10, 990 60"/>
+        </svg>
+        <ol class="route__stops">
+          <li><span>01</span>Workshop<small>Finished &amp; checked</small></li>
+          <li><span>02</span>Packed<small>Straw, honeycomb, double carton</small></li>
+          <li><span>03</span>Port<small>Mundra &middot; Chennai &middot; Kolkata</small></li>
+          <li><span>04</span>Your door<small>Tracked, insured, worldwide</small></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. EXPORT ENQUIRY -->
+  <section class="export" id="export">
+    <div class="export__pitch">
+      <p class="eyebrow">For stores, hotels &amp; brands</p>
+      <h2 class="display">Buying in bulk? <em>Let&rsquo;s talk quantities.</em></h2>
+      <ul class="terms">
+        <li><strong>MOQ from 50 pcs</strong><span>per design, mixed collections welcome</span></li>
+        <li><strong>Private label</strong><span>your colours, tags and packaging</span></li>
+        <li><strong>FOB / CIF quotes</strong><span>with full export documents</span></li>
+        <li><strong>Samples in 7 days</strong><span>shipped by courier before you commit</span></li>
+      </ul>
+    </div>
+
+    <form class="enquiry" novalidate>
+      <div class="enquiry__body">
+        <fieldset>
+          <legend><span>1</span> Products &amp; quantities</legend>
+          <div class="lines" data-lines></div>
+          <button type="button" class="add-line">+ Add another product</button>
+        </fieldset>
+        <fieldset>
+          <legend><span>2</span> Company details</legend>
+          <div class="grid2">
+            <label class="field"><span>Company name *</span><input name="company" required autocomplete="organization"></label>
+            <label class="field"><span>Your name *</span><input name="name" required autocomplete="name"></label>
+            <label class="field"><span>Business email *</span><input name="email" type="email" required autocomplete="email"></label>
+            <label class="field"><span>Website</span><input name="website" type="url" placeholder="https://" autocomplete="url"></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><span>3</span> Where are you buying for?</legend>
+          <label class="field"><span>Country *</span>
+            <select name="country" required data-countries><option value="">Select your country</option></select>
+          </label>
+          <label class="field"><span>Anything else? (finish, packaging, timeline)</span><textarea name="message" rows="3"></textarea></label>
+        </fieldset>
+        <button class="btn btn--clay submit" type="submit"><span class="submit__spin" aria-hidden="true"></span><span class="submit__text">Send enquiry</span></button>
+        <p class="enquiry__fine">You get a copy by email right away. We reply with prices within 24 working hours.</p>
+      </div>
+      <div class="enquiry__done" hidden>
+        <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M24 6h16M26 6c0 6-10 10-10 24 0 14 7 26 16 26s16-12 16-26C48 16 38 12 38 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M24 34l6 6 11-12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+        <h3>Enquiry received</h3>
+        <p data-done-text></p>
+        <button type="button" class="btn btn--line" data-reset>Send another</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- 7. TRUST -->
+  <section class="trust">
+    <div><strong>Secure checkout</strong><span>Cards, UPI, PayPal</span></div>
+    <div><strong>Packed to survive</strong><span>Breakage covered in full</span></div>
+    <div><strong>Truly handmade</strong><span>Small marks are the signature</span></div>
+    <div><strong>Fair to the maker</strong><span>Artisans paid per piece, on time</span></div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__top">
+    <p class="footer__big">Made by hand.<br><em>Made to travel.</em></p>
+    <div class="footer__cols">
+      <div><h4>Shop</h4><a href="#shop">Terracotta</a><a href="#shop">Blue pottery</a><a href="#shop">Wooden toys</a></div>
+      <div><h4>Trade</h4><a href="#export">Export enquiry</a><a href="#export">Private label</a><a href="#export">Samples</a></div>
+      <div><h4>Help</h4><a href="#top">Shipping</a><a href="#top">Returns</a><a href="#top">Care guide</a></div>
+    </div>
+  </div>
+  <details class="credits">
+    <summary>Photo &amp; video credits (Wikimedia Commons)</summary>
+    <p>Pot on the wheel video: Tameem Mahmud 007, CC BY-SA 4.0 &middot; Terracotta making, Asharikandi: Nayan j Nath, CC BY-SA 4.0 &middot; Potter&rsquo;s wheel: Gannu03, CC BY-SA 4.0 &middot; Clay pots: Tapas Kumar Halder, CC BY-SA 4.0 &middot; Terracotta figurines: Biswarup Ganguly, CC BY 3.0 &middot; Blue pottery vase &amp; flask: Neek-Theri, CC BY-SA 4.0 &middot; Channapatna toys: MaximusPrasad, KartikMistry, CC BY-SA 4.0 &middot; Toy flute: Subhashish Panigrahi, CC BY-SA 4.0 &middot; Block printing, Bagru: Anildiggiwal, CC0. Images cropped and compressed.</p>
+  </details>
+  <p class="footer__fine">&copy; 2026 Haath. Design preview. Store name, products and prices are placeholders.</p>
+</footer>
+
+<!-- Cart drawer -->
+<aside class="cart" aria-label="Cart" aria-hidden="true">
+  <div class="cart__panel">
+    <div class="cart__head"><h3>Your cart</h3><button type="button" class="cart__close" aria-label="Close cart">&times;</button></div>
+    <div class="cart__items" data-cart-items></div>
+    <div class="cart__foot">
+      <div class="cart__total"><span>Subtotal</span><strong data-cart-total>0</strong></div>
+      <p class="cart__ship">Shipping calculated at checkout. Ships worldwide.</p>
+      <button type="button" class="btn btn--clay btn--block" data-checkout>Checkout</button>
+    </div>
+  </div>
+</aside>
+<div class="toast" role="status" aria-live="polite"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
